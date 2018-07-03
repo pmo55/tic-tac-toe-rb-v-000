@@ -206,5 +206,4 @@ def play(board)
   
     turn until over?(board)
     puts winner ? "Congratulations #{winner}!" : "Cat's Game!"
-  end
 end
