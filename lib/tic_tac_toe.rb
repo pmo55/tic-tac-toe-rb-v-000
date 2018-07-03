@@ -204,7 +204,7 @@ def winner(board)
 
 def play(board)
  while over? !=true
- turn
+ turn(board)
  if won?
    puts "Congratulations #{winner}!"
    break
