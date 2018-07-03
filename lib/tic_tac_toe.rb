@@ -203,17 +203,17 @@ def winner(board)
   end
 
 def play(board)
-  counter= 1
- while counter<=9
- turn(board)
- counter += 1
- if won?(board)
-   puts "Congratulations #{winner(board)}!"
+ while over? !=true
+ turn
+ if won?
+   puts "Congratulations #{winner}!"
    break
- elsif over?(board)
- puts "Game Over"
- elsif full?(board)
- puts "Draw!"
+   
  end
- end
+ 
+ if draw?
+ puts "Cat's Game!"
 end
+ end
+ end
+ end
